@@ -1,0 +1,293 @@
+# ==========================================================
+# NIKKE Crimson Night
+# Author : Sulthan Andyno
+# Theme  : Dark / Crimson / Midnight Purple / Navy
+# ==========================================================
+
+# : Manager {{{
+
+[mgr]
+
+cwd = { fg = "#1e3a8a", bold = true }
+
+find_keyword = { fg = "#991b1b", bold = true, underline = true }
+find_position = { fg = "#140f2d", bg = "reset", bold = true }
+
+marker_copied = { fg = "#14532d", bg = "#14532d" }
+marker_cut = { fg = "#991b1b", bg = "#991b1b" }
+marker_marked = { fg = "#1e3a8a", bg = "#1e3a8a" }
+marker_selected = { fg = "#140f2d", bg = "#140f2d" }
+
+count_copied = { fg = "#09090b", bg = "#14532d" }
+count_cut = { fg = "#09090b", bg = "#991b1b" }
+count_selected = { fg = "#09090b", bg = "#140f2d" }
+
+border_symbol = "▏"
+border_style = { fg = "#16142d" }
+
+# : }}}
+
+
+
+# : Tabs {{{
+
+[tabs]
+
+active = { fg = "#f4f4f5", bg = "#7f1d1d", bold = true }
+
+inactive = { fg = "#71717a", bg = "#11111b" }
+
+# : }}}
+
+
+
+# : Mode {{{
+
+[mode]
+
+normal_main = { fg = "#ffffff", bg = "#7f1d1d", bold = true }
+normal_alt = { fg = "#71717a", bg = "#11111b" }
+
+select_main = { fg = "#ffffff", bg = "#140f2d", bold = true }
+select_alt = { fg = "#71717a", bg = "#11111b" }
+
+unset_main = { fg = "#ffffff", bg = "#1e3a8a", bold = true }
+unset_alt = { fg = "#71717a", bg = "#11111b" }
+
+# : }}}
+
+
+
+# : Status {{{
+
+[status]
+
+perm_sep = { fg = "#27272a" }
+
+perm_type = { fg = "#1e3a8a" }
+
+perm_read = { fg = "#a16207" }
+
+perm_write = { fg = "#991b1b" }
+
+perm_exec = { fg = "#14532d" }
+
+progress_label = { fg = "#ffffff", bold = true }
+
+progress_normal = { fg = "#14532d", bg = "#18181b" }
+
+progress_error = { fg = "#a16207", bg = "#991b1b" }
+
+# : }}}
+
+
+
+# : Pick {{{
+
+[pick]
+
+border = { fg = "#16142d" }
+
+active = { fg = "#7f1d1d", bold = true }
+
+inactive = {}
+
+# : }}}
+
+
+
+# : Input {{{
+
+[input]
+
+border = { fg = "#16142d" }
+
+title = { fg = "#1e3a8a" }
+
+value = {}
+
+selected = { reversed = true }
+
+# : }}}
+
+
+
+# : Completion {{{
+
+[cmp]
+
+border = { fg = "#16142d" }
+
+# : }}}
+
+
+
+# : Tasks {{{
+
+[tasks]
+
+border = { fg = "#16142d" }
+
+title = {}
+
+hovered = { fg = "#7f1d1d", bold = true }
+
+# : }}}
+
+
+
+# : Which {{{
+
+[which]
+
+mask = { bg = "#11111b" }
+
+cand = { fg = "#1e3a8a" }
+
+rest = { fg = "#71717a" }
+
+desc = { fg = "#7f1d1d" }
+
+separator = " ❯ "
+
+separator_style = { fg = "#16142d" }
+
+# : }}}
+
+
+
+# : Help {{{
+
+[help]
+
+on = { fg = "#1e3a8a" }
+
+run = { fg = "#7f1d1d" }
+
+hovered = { reversed = true, bold = true }
+
+footer = { fg = "#ffffff", bg = "#140f2d" }
+
+# : }}}
+
+
+
+# : Spot {{{
+
+[spot]
+
+border = { fg = "#16142d" }
+
+title = { fg = "#1e3a8a" }
+
+tbl_col = { fg = "#1e3a8a" }
+
+tbl_cell = { fg = "#e4e4e7", bg = "#18181b" }
+
+# : }}}
+
+
+
+# : Notification {{{
+
+[notify]
+
+title_info = { fg = "#14532d" }
+
+title_warn = { fg = "#a16207" }
+
+title_error = { fg = "#991b1b" }
+
+# : }}}
+
+
+
+# : File Types {{{
+
+[filetype]
+
+rules = [
+
+    { mime = "image/*", fg = "#140f2d" },
+
+    { mime = "{audio,video}/*", fg = "#7f1d1d" },
+
+    { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#a16207" },
+
+    { mime = "application/{pdf,doc,rtf}", fg = "#14532d" },
+
+    { mime = "vfs/{absent,stale}", fg = "#71717a" },
+
+    { url = "*", fg = "#e4e4e7" },
+
+    { url = "*/", fg = "#1e3a8a" },
+
+]
+
+# : }}}
+
+
+
+# : Icons {{{
+
+[icon]
+
+dirs = [
+
+    { name = ".config", text = "", fg = "#140f2d" },
+
+    { name = ".git", text = "", fg = "#7f1d1d" },
+
+    { name = ".github", text = "", fg = "#1e3a8a" },
+
+    { name = "Desktop", text = "", fg = "#1e3a8a" },
+
+    { name = "Development", text = "", fg = "#1e3a8a" },
+
+    { name = "Documents", text = "", fg = "#1e3a8a" },
+
+    { name = "Downloads", text = "", fg = "#1d4ed8" },
+
+    { name = "Library", text = "", fg = "#1e3a8a" },
+
+    { name = "Movies", text = "󰿎", fg = "#7f1d1d" },
+
+    { name = "Music", text = "", fg = "#7f1d1d" },
+
+    { name = "Pictures", text = "󰉏", fg = "#140f2d" },
+
+    { name = "Public", text = "󰉖", fg = "#1e3a8a" },
+
+    { name = "Videos", text = "󰿎", fg = "#991b1b" },
+
+]
+
+conds = [
+
+    { if = "orphan", text = "", fg = "#71717a" },
+
+    { if = "link", text = "", fg = "#52525b" },
+
+    { if = "block", text = "", fg = "#7f1d1d" },
+
+    { if = "char", text = "", fg = "#7f1d1d" },
+
+    { if = "fifo", text = "", fg = "#7f1d1d" },
+
+    { if = "sock", text = "", fg = "#7f1d1d" },
+
+    { if = "sticky", text = "", fg = "#7f1d1d" },
+
+    { if = "dummy", text = "", fg = "#991b1b" },
+
+    { if = "dir & hovered", text = "", fg = "#7f1d1d" },
+
+    { if = "dir", text = "", fg = "#1e3a8a" },
+
+    { if = "exec", text = "", fg = "#14532d" },
+
+    { if = "!dir", text = "", fg = "#e4e4e7" },
+
+]
+
+# : }}}
